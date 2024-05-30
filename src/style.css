@@ -70,9 +70,9 @@ main {
 	display: flex;
 }
 
-.weather-app-icon {
+.weather-icon {
 	width: 88px;
-	height: 88px;
+	height: 80px;
 }
 
 .weather-app-temperature {
