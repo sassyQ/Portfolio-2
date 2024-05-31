@@ -17,11 +17,12 @@
 <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
@@ -30,7 +31,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Paris</h1>
+            <h1 class="weather-app-city" id="city">Paris</h1>
             <p class="weather-app-details">
               Tuesday 14:49, scattered clouds
               <br />
@@ -44,13 +45,13 @@
           </div>
         </div>
       </main>
-
-
  <footer>
-    This Project was coded by <a href ="https://github.com/sassyQ?tab=projects" target="_blank">Desray Mackay</a> and open-sourced by 
-                          <a href="https://github.com/sassyQ/Vanilla-weather-App/blob/main/index.html.Vanila%20%20Weather%20App.html"target="_blank" >Github</a>
+    This Project was coded by <a href ="https://github.com/sassyQ?tab=projects" target="_blank">Desray Mackay</a> and open-sourced on 
+                          <a href="https://github.com/sassyQ/Vanilla-weather-App/blob/main/index.html.Vanila%20%20Weather%20App.html"target="_blank">Github</a>
+                          and hosted on Netlify
+
  </footer>
- </footer>
+ </div>
  <script src="src/index.js"></script>
 </body>
 </html> 

@@ -40,14 +40,16 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
-	let apiKey = "5180b0b9c3a07c8faac29349649octb1";
-	let apiUrl = `https://api.shecodes.io/weather/v1/current=${city}&key=${apiKey}and units=metric`;
+	let apiKey = "b2a5adcct04b33178913oc335f405433";
+	let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 	axios.get(apiUrl).then(refreshWeather);
 }
 
 function handleSearchSubmit(event) {
 	event.preventDefault();
 	let searchInput = document.querySelector("#search-form-input");
+	let cityElement = document.querySelector("#city");
+	cityElement.innerHTML = searchInput.value;
 
 	searchCity(searchInput.value);
 }
